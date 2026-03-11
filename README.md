@@ -6,7 +6,7 @@ An AI-powered satellite image classification system that analyzes typhoon intens
 
 ## Live Demo
 
-🔗 [typhoonlens.vercel.app](https://typhoonlens.vercel.app) 
+🔗 [typhoon-lens.vercel.app](https://typhoon-lens.vercel.app) 
 
 ---
 
