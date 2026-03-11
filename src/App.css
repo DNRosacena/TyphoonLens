@@ -1,0 +1,83 @@
+.panel {
+  background: var(--surface);
+  border: 1px solid var(--border);
+}
+.panel-2 {
+  background: var(--surface2);
+  border: 1px solid var(--border);
+}
+
+.eyebrow {
+  font-family: var(--font-mono);
+  font-size: 0.62rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--cyan);
+  opacity: 0.7;
+}
+
+.section-title {
+  font-family: var(--font-display);
+  font-size: clamp(1.6rem, 3.5vw, 2.6rem);
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: white;
+}
+
+.btn-cyan {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 0.82rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  padding: 12px 32px;
+  background: var(--cyan);
+  color: #040810;
+  border: none;
+  cursor: pointer;
+  clip-path: polygon(0 0, calc(100% - 10px) 0, 100% 100%, 0 100%);
+  transition: all 0.2s;
+}
+.btn-cyan:hover { opacity: 0.88; transform: translateX(3px); }
+.btn-cyan:disabled { opacity: 0.35; cursor: not-allowed; transform: none; }
+
+.btn-outline {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 0.78rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  padding: 11px 24px;
+  background: transparent;
+  color: var(--cyan);
+  border: 1px solid var(--cyan-dim);
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.btn-outline:hover { border-color: var(--cyan); background: var(--cyan-dim); }
+
+/* Scale badges */
+.badge-td    { background: #1a3a5c; color: #7ab8ff; border: 1px solid #1a4a7c; }
+.badge-ts    { background: #1a4a2c; color: #7affaa; border: 1px solid #1a6a3c; }
+.badge-sts   { background: #3a3a0a; color: #ffee7a; border: 1px solid #5a5a0a; }
+.badge-ty    { background: #4a2a0a; color: #ffaa4a; border: 1px solid #6a3a0a; }
+.badge-sty   { background: #4a0a0a; color: #ff4a4a; border: 1px solid #7a0a0a; }
+.badge-cat1  { background: #1a4a2c; color: #7affaa; border: 1px solid #1a6a3c; }
+.badge-cat2  { background: #2a4a0a; color: #aaff4a; border: 1px solid #3a6a0a; }
+.badge-cat3  { background: #4a3a0a; color: #ffcc4a; border: 1px solid #6a5a0a; }
+.badge-cat4  { background: #4a2a0a; color: #ffaa4a; border: 1px solid #6a3a0a; }
+.badge-cat5  { background: #4a0a0a; color: #ff4a4a; border: 1px solid #7a1a0a; }
+.badge-unknown { background: #1a1a2a; color: #7a8aaa; border: 1px solid #2a2a4a; }
+
+.scan-overlay {
+  position: fixed; inset: 0; pointer-events: none; z-index: 0;
+  background: repeating-linear-gradient(
+    0deg, transparent, transparent 2px,
+    rgba(0, 229, 255, 0.012) 2px, rgba(0, 229, 255, 0.012) 4px
+  );
+}
+
+.glow-cyan { box-shadow: 0 0 24px rgba(0,229,255,0.18); }
+.text-cyan { color: var(--cyan); }
+.border-cyan { border-color: var(--cyan); }
